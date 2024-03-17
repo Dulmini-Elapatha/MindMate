@@ -8,7 +8,7 @@ import doctorImage from '../assets/doctor.png';
 import friendImage from '../assets/friend.png';
 
 const Home = () => {
-    return (
+    return ( 
         <div>
         <Navbar/>
             <br></br>
