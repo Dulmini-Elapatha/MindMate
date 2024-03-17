@@ -1,10 +1,16 @@
 import React from 'react'
 import './Login.css';
 import { FaUser,FaLock } from "react-icons/fa";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const Login = () => {
   return (
-    <div className='loginform'>
+    <div>
+        <Navbar />
+        <br></br>
+        <div className='loginform'>
+        
         <form action="">
             <h1>Login</h1>
             <div className="input-box">
@@ -30,7 +36,12 @@ const Login = () => {
             </div>
             
         </form>
+        
     </div>  
+    <br></br>
+    <Footer />
+    </div>
+     
   );
 };
 
