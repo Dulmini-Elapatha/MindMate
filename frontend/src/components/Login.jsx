@@ -1,13 +1,13 @@
 import React from 'react'
 import './Login.css';
 import { FaUser,FaLock } from "react-icons/fa";
-import Navbar from "./Navbar";
+import LoginNavbar from "./LoginNavbar";
 import Footer from "./Footer";
 
 const Login = () => {
   return (
     <div>
-        <Navbar />
+        <LoginNavbar />
         <br></br>
         <div className='loginform'>
         

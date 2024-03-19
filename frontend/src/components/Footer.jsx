@@ -27,9 +27,6 @@ const Footer = () => {
                 </li>
             </ul>
             <p className="editor">
-                <a href="#">&#169; By Dilsha Devindi Perera</a>
-            </p>
-            <p className="editor">
                 Project by Team MindMate
             </p>
             <p className="editor" id="copyright">
