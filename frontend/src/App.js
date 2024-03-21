@@ -6,6 +6,7 @@ import  Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Aboutus from './components/Aboutus';
 import DocApp from './components/DocApp';
+import Quiz from './components/Quiz';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/navbar" element={<Navbar />}/>
           <Route path="/footer" element={<Footer/>}/>
           <Route path="/aboutus" element={<Aboutus/>}/>
-          <Route path="/docapp" element={<DocApp/>}/> 
+          <Route path="/docapp" element={<DocApp/>}/>
+          <Route path="/quiz" element={<Quiz/>}/> 
         </Routes>
       </div>
     </Router>

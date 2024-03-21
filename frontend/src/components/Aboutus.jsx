@@ -3,6 +3,9 @@ import './Aboutus.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import image from '../assets/download.png';
+import janith from '../assets/janith.jpeg';
+import dilsha from '../assets/dilsha.jpeg';
+
 
 
 const AboutUs = () => {
@@ -23,13 +26,13 @@ const AboutUs = () => {
             name: 'Dilsha Perera',
             uowId: 'W1998813',
             iitId: '20220223',
-            image: image,
+            image: dilsha,
         },
         {
             name: 'P.M.J. Senarath',
             uowId: 'W1954042',
             iitId: '20221272',
-            image: image,
+            image: janith,
         },
         {
             name: 'Dineshi Tharaka',
