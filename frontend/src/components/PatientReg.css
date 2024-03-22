@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.patient-reg{
+    width: 640px;
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #000;
+    margin: auto;
+    margin-top: 150px;  
+} 
+
+.patient-reg h4{
+    font-size: 30px;
+    margin: 30px 0 0;
+}
+
+
+.patient-reg p{
+    font-size: 18px;
+    color: #000;
+   
+    
+}
+
+.patient-reg input {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+.patient-reg button{
+    background: #001e4d;
+    color: #fff;
+    
+}

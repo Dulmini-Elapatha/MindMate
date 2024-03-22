@@ -5,8 +5,8 @@ import Footer from "./Footer";
 import image from '../assets/download.png';
 import janith from '../assets/janith.jpeg';
 import dilsha from '../assets/dilsha.jpeg';
-
-
+import pavan from '../assets/pavan.jpg';
+import dineshi from '../assets/dineshi.jpeg';
 
 const AboutUs = () => {
     const teamMembers = [
@@ -20,7 +20,7 @@ const AboutUs = () => {
             name: 'Pavan Nishoka',
             uowId: 'W2002470',
             iitId: '20220201',
-            image: image,
+            image: pavan,
         },
         {
             name: 'Dilsha Perera',
@@ -38,7 +38,7 @@ const AboutUs = () => {
             name: 'Dineshi Tharaka',
             uowId: 'W2002466',
             iitId: '20221391',
-            image: image,
+            image: dineshi,
         },
     ];
     return (
