@@ -18,7 +18,7 @@ const DocApp = () => {
                 <br></br>
                 <br></br>
                 <a href="/DocReg"><button><img src={doctorImage} alt="Doctor Appointment" /><br />Register as a Doctor</button></a>
-                <a href="/PatientReg"><button><img src={sessionImage} alt="Session" /><br />Book a Session</button></a>
+                <a href="/PatientReg"><button><img src={sessionImage} alt="Session" /><br />Register as a Patient</button></a>
                 
             </div>
             <br></br>
