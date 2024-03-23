@@ -2,11 +2,11 @@ import React from 'react';
 import './Aboutus.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import image from '../assets/download.png';
 import janith from '../assets/janith.jpeg';
 import dilsha from '../assets/dilsha.jpeg';
 import pavan from '../assets/pavan.jpg';
 import dineshi from '../assets/dineshi.jpeg';
+import dulmini from '../assets/dulmini.png';
 
 const AboutUs = () => {
     const teamMembers = [
@@ -14,7 +14,7 @@ const AboutUs = () => {
             name: 'Dulmini Elapatha',
             uowId: 'W1985727',
             iitId: '20222104',
-            image: image,
+            image: dulmini,
         },
         {
             name: 'Pavan Nishoka',
