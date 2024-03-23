@@ -239,7 +239,7 @@ const SurveyForm = () => {
             value="less1"
             onChange={handleChange}
           />
-          Less than an hour
+          Less than an Hour
           <br />
           <input
             type="radio"
@@ -248,7 +248,7 @@ const SurveyForm = () => {
             value="1-2"
             onChange={handleChange}
           />
-          1 - 2 hours
+          Between 1 and 2 hours
           <br />
           <input
             type="radio"
@@ -257,7 +257,7 @@ const SurveyForm = () => {
             value="2-3"
             onChange={handleChange}
           />
-          2 - 3 hours
+          Between 2 and 3 hours
           <br />
           <input
             type="radio"
@@ -266,7 +266,16 @@ const SurveyForm = () => {
             value="3-4"
             onChange={handleChange}
           />
-          3 - 4 hours
+          Between 3 and 4 hours
+          <br />
+          <input
+            type="radio"
+            id="question7-4-5"
+            name="question7"
+            value="4-5"
+            onChange={handleChange}
+          />
+          Between 4 and 5 hours
           <br />
           <input
             type="radio"
