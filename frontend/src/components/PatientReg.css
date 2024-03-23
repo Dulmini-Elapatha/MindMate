@@ -43,5 +43,6 @@ body{
 .patient-reg button{
     background: #001e4d;
     color: #fff;
+    cursor:pointer;
     
 }
