@@ -1,0 +1,63 @@
+.form {
+    width: 720px;
+    margin: auto;
+    margin-top: 150px;
+    background: white;
+    color: #262626;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+  
+  .question-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"],
+  select,
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="reset"] {
+    background-color: #dc3545;
+    width:  90px;
+  }
+  button{
+    width:  90px;
+  }
+  
+  button:hover {
+    background-color: #79b3f0;
+  }
+  
+  hr {
+    margin-top: 20px;
+  }
+  
+  
