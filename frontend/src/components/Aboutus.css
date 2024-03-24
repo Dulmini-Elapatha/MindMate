@@ -1,6 +1,7 @@
-*{
-    font-family: "Poppins", sans-serif;
-  }
+.about-container{
+  padding :20px
+}
+  
   .image {
     display: flex;
     flex-wrap: wrap;
