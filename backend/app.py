@@ -78,10 +78,11 @@ def get_prediction_message(prediction):
 @app.route('/predict_mental_health', methods=['POST'])
 def predict_mental_health():
     questionnaire_data = request.json
-    preprocessing = preprocessing.preprocess(questionnaire_data)
-    prediction = model.predict
+    preprocessed_data = preprocess(questionnaire_data)
+    prediction = model.predict(preprocessed_data)
     prediction_message = get_prediction_message(prediction)
-    return jsonify({'prediction': prediction, 'message': prediction_message})
+    return jsonify({'prediction': prediction.tolist(), 'message': prediction_message})
+
 
 if __name__ == '__main__':
     app.run(debug=True)
