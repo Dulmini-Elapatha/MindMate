@@ -1,41 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding: 30px 60px;
+}
 
-body {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.home-text {
+  font-family: century-gothic, sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #100f35;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: 100%; 
+}
+
+.home button {
+  width: 270px;
+  height: 260px;
+  min-width: 160px;
+  background: transparent;
+  backdrop-filter: blur(30px);
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 10px; 
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.home a button img {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    justify-content: space-around;
+    padding: 10px 5px;
     
-  } 
-  
-  
-  .home h1 {
-    font-size: 40px;
-    text-align: right;
-    color: #fff;
   }
 
-  .home button{
-    width: 300px;
-    height: 250px;
-    background: transparent;
-    backdrop-filter: blur(30px);
-    color: #fff;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 700; 
-    font-size: 20px;
+  .home button {
+    width: 70%; 
+    max-height: 190px;
+    margin: 10px;
+    font-size: 15px;
   }
- 
-  .home a button img{
-    width: 100px;
-    height: 100px;
 
+  .home-text {
+    font-size: 24px; 
+    text-align: center;
+    margin: 20px auto; 
+    padding: 0 20px; 
   }
-    
-  
+  .home a button img {
+    width: 70px;
+    height: 70px;
+  }
+}

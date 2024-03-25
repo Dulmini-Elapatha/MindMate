@@ -11,20 +11,15 @@ const Home = () => {
     return ( 
         <div>
         <Navbar/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+        <div>
+        <h1 className="home-text">Empowering Minds,<br></br>Connecting Hearts<br></br>Your Path to Mental Wellness.</h1>
             <div className="home">
-                <h1>Empowering Minds,<br></br>Connecting Hearts<br></br>Your Path to Mental Wellness.</h1>
-                <br></br>
                 <a href="/Chatbot"><button><img src={chatbotImage} alt="Chatbot" /><br />Chatbot</button></a>
                 <a href="/Quiz"><button><img src={quizImage} alt="Questionnaire" /><br />Questionnaire</button></a>
                 <a href="/DocApp"><button><img src={doctorImage} alt="Doctor Appointment" /><br />Doctor Appointment</button></a>
-                <a href="/FindFriend"><button><img src={friendImage} alt="Find a Friend" /><br />Find a Friend</button></a>
-                
+                <a href="/FindFriend"><button><img src={friendImage} alt="Find a Friend" /><br />Find a Friend</button></a>           
             </div>
-            <br></br>
+        </div>
         <Footer/>
         </div>
     );
