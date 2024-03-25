@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './DocReg.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { auth } from '../config/firebase'; // Import auth from Firebase configuration
 
 const DoctorRegistrationForm = () => {
   const [fullName, setFullName] = useState('');
@@ -11,28 +12,39 @@ const DoctorRegistrationForm = () => {
   const [experience, setExperience] = useState('');
   const [additionalInfo, setAdditionalInfo] = useState('');
   const [SLMCNumber, setSLMCNumber] = useState(''); 
+  const [error, setError] = useState(null); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Submitted:', { fullName, email, password, specialization, experience, additionalInfo, SLMCNumber });
   };
 
+  const handleLogin = async () => {
+    try {
+      await auth.signInWithEmailAndPassword(email, password);
+      console.log('Logging in...');
+    } catch (error) {
+      console.error('Login failed:', error.message);
+      setError(error.message);
+    }
+  };
+
   return (
     <div>
       <Navbar/>
       <div className='container'>
-      <h4>Doctor Registration</h4><hr/><br/>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <p>Full Name:</p>
-          <input
-            type="text"
-            value={fullName}
-            onChange={(e) => setFullName(e.target.value)}
-            required
-          />
-        </div>
-        <br/>
+        <h4>Doctor Registration</h4><hr/><br/>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <p>Full Name:</p>
+            <input
+              type="text"
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              required
+            />
+          </div>
+          <br/>
         <div className='label'>
           <p>Email:</p>
           <input
@@ -90,17 +102,16 @@ const DoctorRegistrationForm = () => {
             onChange={(e) => setAdditionalInfo(e.target.value)}
           />
         </div>
-        <div>
-        <br/>
-        <a href="/Doctor"><button type="submit">Register</button></a>
-        </div>
-      </form>
+          <div>
+            <br/>
+            <a href="/Doctor"><button type="submit">Register</button></a>
+            <button type="button" onClick={handleLogin}>Login</button> {/* Use handleLogin here */}
+          </div>
+        </form>
+      </div>
+      <br/> <br/>
+      <Footer />
     </div>
-    <br/> <br/>
-    <Footer />
-
-    </div>
-    
   );
 };
 
