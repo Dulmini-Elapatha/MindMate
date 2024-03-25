@@ -7,17 +7,19 @@
 }
 
 .home-text {
+  font-family: century-gothic, sans-serif;
   font-size: 40px;
-  text-align: right;
-  color: #ffffff;
-  margin-right: 15px;
-  margin-top: 20px;
+  text-align: left;
+  color: #100f35;
+  margin-left: 30px;
+  margin-top: 30px;
   flex-basis: 100%; 
 }
 
 .home button {
-  width: 260px;
-  height: 250px;
+  width: 270px;
+  height: 260px;
+  min-width: 160px;
   background: transparent;
   backdrop-filter: blur(30px);
   color: #fff;
@@ -30,6 +32,8 @@
   font-weight: 700;
   font-size: 20px;
   margin: 10px; 
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .home a button img {
@@ -38,4 +42,31 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    justify-content: space-around;
+    padding: 10px 5px;
+    
+  }
+
+  .home button {
+    width: 70%; 
+    max-height: 190px;
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .home-text {
+    font-size: 24px; 
+    text-align: center;
+    margin: 20px auto; 
+    padding: 0 20px; 
+  }
+  .home a button img {
+    width: 70px;
+    height: 70px;
+  }
 }
