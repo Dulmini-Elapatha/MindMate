@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 
 booked_appointments = [
@@ -24,5 +24,5 @@ def cancel_appointment():
     else:
         return jsonify({'error': 'Appointment not found'}), 404
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True)
