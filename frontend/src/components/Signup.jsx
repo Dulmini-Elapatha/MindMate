@@ -29,6 +29,8 @@ function Signup() {
         }
     };
     return (
+        <div>
+            <div className='login-container'>
         <div className='loginform'>
             <form action="">
                 <h1>Signup</h1>
@@ -57,6 +59,8 @@ function Signup() {
                 </div>           
             </form>
         </div>
+        </div>
+    </div>
     );
 }
 
