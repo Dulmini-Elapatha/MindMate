@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container{
     width: 640px;
     display: flex; 
@@ -10,7 +20,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: #000;
     margin: auto;
-    margin-top: 20px;  
+    margin-top: 150px;   
 } 
 
 .container h4{
@@ -41,6 +51,5 @@
     height: 45px;
     font-size: 15px;
     cursor: pointer;
-    border-radius: 5px;
     
 }
