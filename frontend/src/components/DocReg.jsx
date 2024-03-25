@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './DocReg.css';
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { auth } from '../config/firebase'; // Import auth from Firebase configuration
+//import { auth } from './components/config/firebase';
+import { auth } from '../../config/firebase';
+
 
 const DoctorRegistrationForm = () => {
   const [fullName, setFullName] = useState('');
@@ -105,7 +107,7 @@ const DoctorRegistrationForm = () => {
           <div>
             <br/>
             <a href="/Doctor"><button type="submit">Register</button></a>
-            <button type="button" onClick={handleLogin}>Login</button> {/* Use handleLogin here */}
+            <button type="button" onClick={handleLogin}>Login</button> 
           </div>
         </form>
       </div>
