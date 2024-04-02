@@ -12,15 +12,7 @@ import PatientReg from "./components/PatientReg";
 import Profile from "./components/Profile";
 import Homee from "./components/Homee/Home";
 import Roomm from "./components/Roomm/Room";
-import Quiz from './components/Quiz';
-import Signup from "./components/Signup";
-import Home from './components/Home';
-import Aboutus from './components/Aboutus';
-import DocApp from './components/DocApp';
-import DocReg from './components/DocReg';
 import Chatbot from './components/Chatbot';
-import PatientReg from './components/PatientReg';
-import Profile from './components/Profile';
 import AppointmentsForm from './components/AppointmentsForm';
 import AppointmentView from './components/AppoinmentView';
 
