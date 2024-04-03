@@ -1,29 +1,15 @@
-from flask import Flask, request ,jsonify
+# app.py
+from flask import Flask, request, jsonify
 
-app = Flask('Full Calender')
+app = Flask(__name__)
 
-appointments =[]
+appointments = []
 
-@app.route('/schedule', methods=['POST'])
-
-def schedule_appointment():
+@app.route('/appointments', methods=['POST'])
+def create_appointment():
     data = request.json
-    if 'date' not in data or 'time' not in data or 'name' not in data:
-       return jsonify({'error': 'Missing required fields'}), 400
-    
-    new_appointment = {
-        'name': data['name'],
-        'date': data['date'],
-        'time': data['time']  
-    }
-    appointments.append(new_appointment)
+    appointments.append(data)
+    return jsonify({'message': 'Appointment created successfully'}), 201
 
-    return jsonify({'message': 'Appointment scheduled successfully'}), 201
-
-
-@app.route('/appointments',methods=['GET'])
-def get_all_appointments():
-    return jsonify(appointments)
-
-if __name__ =="__main__":
+if __name__ == '__main__':
     app.run(debug=True)

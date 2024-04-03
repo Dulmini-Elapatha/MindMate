@@ -13,8 +13,8 @@ import Profile from "./components/Profile";
 import Homee from "./components/Homee/Home";
 import Roomm from "./components/Roomm/Room";
 import Chatbot from './components/Chatbot';
-import AppointmentsForm from './components/AppointmentsForm';
-import AppointmentView from './components/AppoinmentView';
+import AppointmentForm from './components/AppointmentForm';
+import AppointmentView from './components/AppointmentView';
 
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
           <Route  path='/profile' element={<Profile />}/>
           <Route path="/chatbot" element={<Chatbot/>}/>
           <Route path="/patientreg" element={<PatientReg/>}/> 
-          <Route path="/AppointsmentsForm" element={<AppointmentsForm/>}/> 
+          <Route path="/AppointsmentsForm" element={<AppointmentForm/>}/> 
           <Route path="/AppointsmentView" element={<AppointmentView/>}/> 
         </Routes>
       </div>

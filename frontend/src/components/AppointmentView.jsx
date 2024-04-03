@@ -1,5 +1,5 @@
 import React from "react";
-import "./AppointmentView.css";
+//import "./components/AppointmentView.css";
 import Navbar from "./LoginNavbar";
 import Footer from "./Footer";
 
