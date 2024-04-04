@@ -92,7 +92,7 @@ const DoctorRegistrationForm = () => {
         </div>
         <div>
         <br/>
-        <a href="/Doctor"><button type="submit">Register</button></a>
+        <a href="/AppointmentForm"><button type="submit">Register</button></a>
         </div>
       </form>
     </div>

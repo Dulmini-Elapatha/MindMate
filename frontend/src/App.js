@@ -10,11 +10,12 @@ import DocApp from "./components/DocApp";
 import DocReg from "./components/DocReg";
 import PatientReg from "./components/PatientReg";
 import Profile from "./components/Profile";
-import Homee from "./components/Homee/Home";
-import Roomm from "./components/Roomm/Room";
 import Chatbot from './components/Chatbot';
 import AppointmentForm from './components/AppointmentForm';
-import AppointmentView from './components/AppointmentView';
+import PatientAppointmentForm from './components/PatientAppointmentForm';
+import FindFriends from './components/RoomID';
+import RoomMain from './components/Room'
+
 
 
 function App() {
@@ -22,9 +23,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-
-          <Route path="/" element={<Homee />} />
-          <Route path="/room/:roomid" element={<Roomm />} />
+          <Route path="/Find-a-friend/room/:roomid" element={<RoomMain/>} />
+          <Route path="/Find-a-friend" element={<FindFriends />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/quiz" element={<Quiz />} />
@@ -43,11 +43,11 @@ function App() {
           <Route path="/aboutus" element={<Aboutus/>}/>
           <Route path="/docapp" element={<DocApp/>}/>
           <Route path="/docreg" element={<DocReg/>}/>
-          <Route  path='/profile' element={<Profile />}/>
+          <Route path='/profile' element={<Profile />}/>
           <Route path="/chatbot" element={<Chatbot/>}/>
           <Route path="/patientreg" element={<PatientReg/>}/> 
           <Route path="/AppointsmentsForm" element={<AppointmentForm/>}/> 
-          <Route path="/AppointsmentView" element={<AppointmentView/>}/> 
+          <Route path="/PatientAppointmentForm" element={<PatientAppointmentForm/>}/> 
         </Routes>
       </div>
     </Router>

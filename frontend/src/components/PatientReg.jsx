@@ -47,7 +47,7 @@ const PatientReg = () => {
           />
         </div>
         <div>
-        <a href="/Patient"><button type="submit">Register</button></a>
+        <a href="/PatientAppointmentForm"><button type="submit">Register</button></a>
         </div>
       </form>
     </div>
