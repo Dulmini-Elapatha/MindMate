@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import './Chatbot.css';
+import './Chatbot.css'
 
 function App() {
   const [currentMessage, setCurrentMessage] = useState('');
@@ -14,9 +14,8 @@ function App() {
     "What are some relaxation techniques?"
   ]);
 
-  const handleSend = async () => {
-    const messageToSend = currentMessage.trim();
-    if (!messageToSend) return;
+  const handleSend = async (messageToSend) => {
+    if (!messageToSend.trim()) return;
 
     const newChatHistory = [...chatHistory, { sender: 'user', content: messageToSend }];
     setChatHistory(newChatHistory);
@@ -62,7 +61,7 @@ function App() {
             <form 
               onSubmit={(e) => { 
                 e.preventDefault(); 
-                handleSend();
+                handleSend(currentMessage);
               }} 
               className="message-form"
             >
@@ -86,7 +85,7 @@ function App() {
               <Button 
                 key={index}
                 variant="outline-primary"
-                onClick={() => setCurrentMessage(suggestion)}
+                onClick={() => handleSend(suggestion)}
                 className="suggestion-button"
               >
                 {suggestion}

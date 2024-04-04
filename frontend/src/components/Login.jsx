@@ -1,13 +1,14 @@
 import React from 'react';
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
-// import LoginNavbar from "./LoginNavbar";
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import Navbar02 from './Navbar02';
 import Footer from "./Footer";
 
 const Login = () => {
     return (
         <div>
-            {/* <LoginNavbar /> */}
+            <Navbar02/>
             <br />
             <div className='login-container'>
                 <div className='loginform'>
@@ -32,7 +33,8 @@ const Login = () => {
 
                         <button type="submit">Login</button>
                         <div className="register-link">
-                            <p>Don't have an account? <a href="/Signup" class="link signup-link">Signup</a></p>
+                            {/* Replace the anchor tag with Link */}
+                            <p>Don't have an account? <Link to="/Signup" className="link signup-link">Signup</Link></p>
                         </div>
 
                     </form>

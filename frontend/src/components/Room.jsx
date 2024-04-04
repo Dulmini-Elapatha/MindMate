@@ -1,7 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { appId, serversecret } from "../helper";
+import { appId, serversecret } from "./helper";
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
+import Navbar from './Navbar';
+import './Room.css'
 
 const Room = () => {
   const { roomid } = useParams();
@@ -28,7 +30,10 @@ const Room = () => {
 
   return (
     <div>
+      <Navbar/>
+    <div className="Room_container">
       <div ref={myMeeting} />
+    </div>
     </div>
   );
 };

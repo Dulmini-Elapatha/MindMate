@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './Login.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import firebase, { app, analytics, auth } from '../firebase';
+import Navbar02 from './Navbar02';
 
 function Signup() {
  
@@ -30,6 +31,7 @@ function Signup() {
     };
     return (
         <div>
+            <Navbar02/>
             <div className='login-container'>
         <div className='loginform'>
             <form action="">

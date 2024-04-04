@@ -8,12 +8,6 @@ import './Navbar.css';
 
 
 const navigation = [
-  { name: 'Home', href: '/home', current: false },
-  { name: 'Chatbot', href: '/chatbot', current: false },
-  { name: 'Quiz', href: '/Quiz', current: false },
-  { name: 'Find a Friend', href: '/Find-a-friend', current: false },
-  { name: 'Doctor', href: '/docapp', current: false },
-  { name: 'About Us', href: '/aboutus', current: false },
 ];
 
 function classNames(...classes) {
@@ -75,16 +69,6 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Profile dropdown */}
                 <Menu as="div" className="relative ml-3">
-                  <div>
-                    <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-                      <span className="sr-only">Open user menu</span>
-                      <img
-                        className="h-8 w-8 rounded-full"
-                        src={Userimg}
-                        alt=""
-                      />
-                    </Menu.Button>
-                  </div>
                   <Transition
                     as={React.Fragment}
                     enter="transition ease-out duration-100"
@@ -95,26 +79,6 @@ export default function Navbar() {
                     leaveTo="transform opacity-0 scale-95"
                   >
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="/profile"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Your Profile
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="/logout"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Sign out
-                          </a>
-                        )}
-                      </Menu.Item>
                     </Menu.Items>
                   </Transition>
                 </Menu>

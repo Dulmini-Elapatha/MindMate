@@ -2,6 +2,7 @@ import React from 'react';
 import './DocApp.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
+//import firebase from 'firebase';
 import doctorImage from '../assets/doctor.png';
 import sessionImage from '../assets/session.png';
 
